@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEDA Liberia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Banner Section -->
+    <header class="banner">
+        <div class="banner-overlay">
+            <div class="banner-logo-container">
+                <img src="ceda.jpg" alt="CEDA Liberia Logo" class="banner-logo-top">
+            </div>
+            <div class="container">
+                <h1><strong>Welcome to CEDA-Liberia</strong></h1>
+                <p>Delivering Environmental Consultancy Solutions in Africa</p>
+                <a href="contact.html" class="btn">Contact Us</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation with Hamburger -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="ceda.jpg" alt="CEDA Liberia Logo" class="logo">
+                </div>
+                <div class="nav-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="projects.html" class="nav-link">Projects</a></li>
+                    <li><a href="team.html" class="nav-link">Team</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hamburger JS -->
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navMenu = document.querySelector('.nav-menu');
+
+        mobileMenu.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+        });
+    </script>
+<section>
+            <div class="container">
+                <div class="section-title">
+                    <h2><strong>CONSULTING SERVICES WE OFFER</strong></h2>
+                </div><div class="grid">
+                    <div class="card">
+                        <h3><strong>1. Environmental and Social Impact Assessment (ESIA)</strong></h3>
+                        <hr>
+                        <p>We conduct full ESIA studies compliant with the Environmental Protection Agency (EPA) 
+                            of Liberia and all international safeguards for development projects in Liberia.</p>
+                    </div><div class="card">
+                        <h3><strong>2. Environmental & Social Management Plan (ESMP)</strong></h3>
+                        <hr>
+                        <p>We prepare ESMPs to ensure effective management of environmental and social impacts 
+                            throughout the project lifecycle.</p>
+                    </div><div class="card">
+                        <h3><strong>3. Resettlement Action Plan (RAP)</strong></h3>
+                        <hr>
+                        <p>Our team can develop comprehensive Resettlement Action Plans (RAPs) to ensure 
+                            proper management of affected populations during development projects.</p>
+                    </div><div class="card">
+                        <h3><strong>4. Water Quality Assessment and Analysis</strong></h3>
+                        <hr>
+                        <p>We conduct and prepare comprehensive water quality assessments 
+                            and analyses to ensure compliance with 
+                            national and international standards.</p>
+                    </div><div class="card">
+                        <h3><strong>5. Environmental & Social Compliance Audits</strong></h3>
+                        <hr>
+                        <p>We are a team of environmental auditors and consultants who provide compliance 
+                            audits and monitoring services.</p>
+                    </div>
+                    <div class="card">
+                        <h3><strong>6. Emergency Preparedness & Response Planning</strong></h3>
+                        <hr>
+                        <p>We conduct emergency preparedness and response planning to ensure 
+                        readiness for natural disasters and other emergencies.</p>
+                    </div><div class="card">
+                        <h3><strong>7. Traffic Management</strong></h3>
+                        <hr>
+                        <p>We provide traffic management services to ensure safe and efficient 
+                            movement of vehicles and pedestrians.</p>
+                    </div><div class="card">
+                        <h3><strong>8. Occupational Health, Safety & Environment (OHSE / HSE) Plan</strong></h3>
+                        <hr>
+                        <p>We prepare OHSE plans for high risk projects.</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section class="cta">
+        <h2>Request a Proposal</h2>
+        <a href="contact.html">Contact Our Team</a>
+    </section>
+   <footer>
+  <div class="container">
+    <P><strong>LOCATE US AT:</strong></P>
+    <p>Wesley Corner</p>
+    Waterside Community, New Georgia, <br>
+    Caldwell Township <br>
+    Monrovia, Liberia<br />
+    Phone: +232 778-002-969<br />
+    EMAIL: cedaliberia@gmail.com<br />
+    <p>&copy; 2026 Center for Environment and Development in Africa (CEDA) Liberia All rights reserved.</p>
+</div>
+</footer>
+</body>
+</html>

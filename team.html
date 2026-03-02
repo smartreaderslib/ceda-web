@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEDA Liberia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Banner Section -->
+    <header class="banner">
+        <div class="banner-overlay">
+            <div class="banner-logo-container">
+                <img src="ceda.jpg" alt="CEDA Liberia Logo" class="banner-logo-top">
+            </div>
+            <div class="container">
+                <h1><strong>Welcome to CEDA-Liberia</strong></h1>
+                <p>Delivering Environmental Consultancy Solutions in Africa</p>
+                <a href="contact.html" class="btn">Contact Us</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation with Hamburger -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="ceda.jpg" alt="CEDA Liberia Logo" class="logo">
+                </div>
+                <div class="nav-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="projects.html" class="nav-link">Projects</a></li>
+                    <li><a href="team.html" class="nav-link">Team</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hamburger JS -->
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navMenu = document.querySelector('.nav-menu');
+
+        mobileMenu.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+        });
+    </script>
+        <section>
+            <div class="container">
+                <div class="section-title">
+                    <h2>Our Technical Experts</h2>
+                </div><div class="grid">
+                    <div class="card">
+                        <h3>Core Technical Experts</h3>
+                        <p>These roles directly ensure technical quality 
+                            and compliance</p>
+                            <br>
+                            <p><strong>1. Lead Environmental Consultant / Principal 
+                                Environmental Specialist</strong></p>
+                            <p>Overall technical leadership, quality assurance, and client 
+                                oversight.</p>
+                                <br>
+                            <p><strong>2. Environmental & Social Impact Assessment (ESIA) Specialist</strong></p>
+                            <p>Lead ESIA studies, ensuring compliance with EPA and 
+                                international safeguards.</p>
+                                <br>
+                            <p><strong>3. Environmental Safeguards & Compliance Specialist</strong></p>
+                            <p>Ensure compliance with environmental and social safeguards, 
+                                coordinate with regulatory bodies, and manage compliance 
+                                reporting.</p>
+                                <br>
+                                <p><strong>4. Climate Change & Resilience Specialist</strong></p>
+                                <p>Provide expertise on climate change mitigation and adaptation 
+                                    strategies, integrating climate considerations into project 
+                                    design and implementation.</p>
+                                    <br>
+                                    <p><strong>5. Environmental Monitoring & Audit Specialist</strong></p>
+                                    <p>Design and implement environmental monitoring programs, 
+                                        conduct environmental audits, and ensure ongoing compliance with 
+                                        environmental standards.</p>
+                    </div><div class="card">
+                        <h3><strong>Natural Resource & Sector Experts</strong></h3>
+                        <br>
+                        <p>These roles provide sector-specific and natural resource 
+                            expertise</p>
+                        <p><strong>1. Natural Resource Management Specialist</strong></p> 
+                        <p>Provides expertise in forestry, biodiversity, land use, conservation planning.</p>
+                        <br>  
+                        <p><strong>2. Biodiversity & Ecosystem Services Specialist</strong></p> 
+                        <p>Provides expertise in habitat assessments, species protection, offsets, 
+                            ecosystem valuation.</p>
+                            <br>
+                            <p><strong>3. Water, Sanitation & Environmental Health (WASH/EH) Specialist</strong></p>
+                        <p>Provides expertise in water quality, sanitation, environmental health risk assessments.</p>
+                    </div>
+                    <div class="card">
+                        <h3><strong>Social & Community Experts</strong></h3>
+                        <p>These roles are critical for inclusive stewardship and project acceptance.</p>
+                        <br>
+                        <p><strong>1. Social Development & Community Engagement Specialist</strong></p>
+                        <p>Provides expertise in Stakeholder consultations, social risk analysis, grievance mechanisms.</p>
+                        <br>
+                        <p><strong>2. Resettlement & Livelihoods Specialist</strong></p>
+                        <p>Provides expertise in resettlement planning, livelihood restoration, and social 
+                            safeguards.</p>
+                            <br>
+                            <p><strong>3. Gender & Social Inclusion Specialist</strong></p>
+                        <p>Provides expertise in gender mainstreaming, social inclusion, and ensuring equitable access to project benefits.</p>
+                    </div>
+                    <div class="card">
+                        <h3><strong>Data, Planning & Technical Support Experts</strong></h3>
+                        <p>These roles provide essential data analysis, planning, and technical support.</p>
+                        <br>
+                        <p><strong>1. GIS & Environmental Data Analyst</strong></p>
+                        <p>Provides expertise in spatial data analysis, mapping, and remote 
+                            sensing applications for environmental monitoring and management.</p>
+                            <br>
+                        <p><strong>2. Environmental Research & Policy Analyst</strong></p>
+                        <p>Provides expertise in environmental research, policy analysis, and 
+                            evidence-based decision-making.</p>
+                            <br>
+                        <p><strong>3. Project & Program Management Specialist</strong></p>
+                        <p>Provides expertise in project planning, implementation, monitoring, and evaluation.</p>
+                    </div>
+                    <div class="card">
+                        <h3><strong>Health, Safety & Risk Experts</strong></h3>
+                        <p>This roles provides expertise in health, safety, and risk management 
+                            for environmental projects.</p>
+                            <br>
+                    <p><strong>1. Occupational Health, Safety & Environment (OHSE/HSE) Specialist</strong></p>
+                    <p>Provides expertise in occupational health, safety, and environmental management 
+                        for project implementation.</p>
+                    </div>
+                    <div class="card">
+                        <h3><strong>Leadership & Quality Control</strong></h3>
+                        <p>These roles protect CEDA’s reputation.</p>
+                        <br>
+                        <p><strong>1. Quality Assurance & Technical Review Expert</strong></p>
+                        <p>provides independent review of reports before client submission.</p>
+                        <br>
+                        <p><strong>2. Project Manager – Environmental Services</strong></p>
+                        <p>Prepares schedules, budgets, coordination, and client communication.</p>
+                        
+                </div>
+            </div>
+       </section>
+    <section class="cta">
+        <h2>Request a Proposal</h2>
+        <a href="contact.html">Contact Our Team</a>
+    </section>
+    <footer>
+  <div class="container">
+    <P><strong>LOCATE US AT:</strong></P>
+    <p>Wesley Corner</p>
+    Waterside Community, New Georgia, <br>
+    Caldwell Township <br>
+    Monrovia, Liberia<br />
+    Phone: +232 778-002-969<br />
+    EMAIL: cedaliberia@gmail.com<br />
+    <p>&copy; 2026 Center for Environment and Development in Africa (CEDA) Liberia All rights reserved.</p>
+</div>
+</footer>
+</body>
+</html>

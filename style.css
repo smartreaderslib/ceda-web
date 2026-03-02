@@ -1,0 +1,354 @@
+/* ===============================
+   RESET & GLOBAL STYLES
+=============================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+}
+
+/* ===============================
+   HEADER
+=============================== */
+header {
+    background: #0b6623;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.header-flex {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* ===============================
+   CENTER NAVIGATION MENU
+=============================== */
+nav {
+    width: 100%;
+    background-color: #0b6623;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #ff6b00;
+    border-radius: 5px;
+    color: #fff;
+}
+
+/* ===============================
+   BANNER SECTION
+=============================== */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background: url('ceda banner.jpg') no-repeat center center / cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+.banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-logo-top {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 100px;
+    height: auto;
+    z-index: 3;
+}
+
+.banner .container {
+    position: relative;   /* FIX: ensures text stays above overlay */
+    z-index: 2;
+}
+
+.banner h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.banner p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+.banner .btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #ff6b00;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.banner .btn:hover {
+    background-color: #ff4500;
+}
+
+/* ===============================
+   HAMBURGER NAVBAR
+=============================== */
+.navbar {
+    width: 100%;
+    background-color: #0b6623;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.nav-logo img {
+    width: 40px;
+    height: auto;
+    padding: auto;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;       /* FIX: prevents default UL spacing */
+    padding: 0;
+}
+
+.nav-menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+.nav-menu li a:hover {
+    background-color: #ff6b00;
+    border-radius: 5px;
+    color: #fff;
+}
+
+/* Hamburger menu icon */
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.nav-toggle .bar {
+    height: 3px;
+    width: 25px;
+    background-color: #fff;
+    margin: 4px 0;
+    transition: 0.3s;
+}
+
+/* ===============================
+   RESPONSIVE NAVBAR
+=============================== */
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: flex;
+    }
+
+    .nav-menu {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background-color: #0b6623;
+        flex-direction: column;
+        align-items: center;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in;
+    }
+
+    .nav-menu.active {
+        max-height: 500px;
+    }
+
+    .nav-menu li {
+        margin: 15px 0;
+    }
+
+    /* FIX: prevents double column behavior */
+    nav ul {
+        flex-direction: column;
+        gap: 12px;
+    }
+}
+
+/* ===============================
+   HERO SECTION
+=============================== */
+.hero {
+    background: linear-gradient(rgba(219, 213, 213, 0.6), rgba(0,0,0,0.6)),
+                url('backgr1.jpg') center / cover no-repeat;
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+/* ===============================
+   SECTIONS
+=============================== */
+section {
+    padding: 60px 20px;
+}
+
+.section-title {
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+.section-title h2 {
+    color: #0b6623;
+    margin-bottom: 10px;
+}
+
+/* ===============================
+   GRID & CARDS
+=============================== */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+    color: #0b6623;
+    margin-bottom: 10px;
+}
+
+/* ===============================
+   CALL TO ACTION
+=============================== */
+.cta {
+    background: #0b6623;
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.cta a {
+    display: inline-block;
+    margin-top: 15px;
+    background: #fff;
+    color: #0b6623;
+    padding: 10px 25px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* ===============================
+   FORMS
+=============================== */
+form {
+    max-width: 700px;
+    margin: auto;
+    display: grid;
+    gap: 15px;
+}
+
+input,
+textarea,
+button {
+    padding: 12px;
+}
+
+button {
+    background: #0b6623;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* ===============================
+   FOOTER
+=============================== */
+footer {
+    background: #222;
+    color: #ccc;
+    padding: 30px 20px;
+}
+
+footer a {
+    color: #0b6623;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}

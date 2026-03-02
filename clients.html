@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEDA Liberia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Banner Section -->
+    <header class="banner">
+        <div class="banner-overlay">
+            <div class="banner-logo-container">
+                <img src="ceda.jpg" alt="CEDA Liberia Logo" class="banner-logo-top">
+            </div>
+            <div class="container">
+                <h1><strong>Welcome to CEDA-Liberia</strong></h1>
+                <p>Delivering Environmental Consultancy Solutions in Africa</p>
+                <a href="contact.html" class="btn">Contact Us</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation with Hamburger -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="ceda.jpg" alt="CEDA Liberia Logo" class="logo">
+                </div>
+                <div class="nav-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="projects.html" class="nav-link">Projects</a></li>
+                    <li><a href="team.html" class="nav-link">Team</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hamburger JS -->
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navMenu = document.querySelector('.nav-menu');
+
+        mobileMenu.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+        });
+    </script>
+<section>
+    <div class="container">
+        <div class="section-title">
+            <h2>Clients & Partners</h2>
+        </div><div class="grid">
+            <div class="card">
+                <h3>Governments</h3>
+                <p>Environmental and regulatory agencies.</p>
+            </div><div class="card">
+                <h3>International Organizations</h3>
+                <p>UN agencies, INGOs, donors.</p>
+            </div><div class="card">
+                <h3>Private Sector</h3>
+                <p>Infrastructure and extractives.</p>
+            </div>
+        </div>
+    </div>
+ </section>
+    <section class="cta">
+        <h2>Request a Proposal</h2>
+        <a href="contact.html">Contact Our Team</a>
+    </section>
+   <footer>
+  <div class="container">
+    <P><strong>LOCATE US AT:</strong></P>
+    <p>Wesley Corner</p>
+    Waterside Community, New Georgia, <br>
+    Caldwell Township <br>
+    Monrovia, Liberia<br />
+    Phone: +232 778-002-969<br />
+    EMAIL: cedaliberia@gmail.com<br />
+    <p>&copy; 2026 Center for Environment and Development in Africa (CEDA) Liberia All rights reserved.</p>
+</div>
+</footer>
+</body>
+</html>

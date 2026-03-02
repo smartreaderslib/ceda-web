@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEDA Liberia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Banner Section -->
+    <header class="banner">
+        <div class="banner-overlay">
+            <div class="banner-logo-container">
+                <img src="ceda.jpg" alt="CEDA Liberia Logo" class="banner-logo-top">
+            </div>
+            <div class="container">
+                <h1><strong>Welcome to CEDA-Liberia</strong></h1>
+                <p>Delivering Environmental Consultancy Solutions in Africa</p>
+                <a href="contact.html" class="btn">Contact Us</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation with Hamburger -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="ceda.jpg" alt="CEDA Liberia Logo" class="logo">
+                </div>
+                <div class="nav-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="projects.html" class="nav-link">Projects</a></li>
+                    <li><a href="team.html" class="nav-link">Team</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hamburger JS -->
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navMenu = document.querySelector('.nav-menu');
+
+        mobileMenu.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+        });
+    </script>
+        <section>
+            <div class="container">
+                <div class="section-title">
+                    <h2><strong>KEY PROJECTS IMPLEMENTED BY CEDA</strong></h2>
+                    <p>All of the below reports were prepared by CEDA, and in some cases
+                        partners (JV) and submitted to the EPA for review and approval. We 
+                        can say with confidence that all of our reports were reviewed and
+                        approved by the Environmental Protection Agency (EPA) of Liberia.
+                    </p>
+                </div>
+                <div class="grid">
+                    <div class="card">
+                        <h3><strong>Environmental & Social Impact Assessment (ESIA)</strong></h3>
+                        <hr>
+                        <p>Prepared for Energy, Infrastructure, Mining, and transport projects. <projects class="br">
+                        Founded by World Bank, African Development Bank, Liberian Government,
+                        and private investers.
+                        </projects></p>
+                    </div><div class="card">
+                        <h3><strong>Environmental Compliance Audits</strong></h3>
+                        <hr>
+                        <p>These report were prepared energy, sanitation, 
+                            and mining project. These projects were founded 
+                            by the national and international Organizations
+                            as well as private investers.</p>
+                    </div>
+                    <div class="card">
+                        <h3><strong>Resettlement Action Plans (RAPs)</strong></h3>
+                        <hr>
+                        <p>We have prepared a number of RAPs report for our clients
+                            on different untakings including energy, infrastructure,
+                            mining, etc. These project were founded international and 
+                            national institution institutions, government of Liberia,
+                            and private individuals.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <h3><strong>Environmental & Social Management Plans (ESMPs)
+                            - A stand-alone report
+                        </strong></h3>
+                        <hr>
+                        <p>We have prepared a number of ESMPs as stand-alone
+                            report for our clients on different untakings including energy, infrastructure,
+                            mining, etc. These project were founded international and 
+                            national institution institutions, government of Liberia,
+                            and private individuals.
+                        </p>
+                   </div>
+                    <div class="card">
+                        <h3><strong>Environmental Project Brief</strong></h3>
+                        <hr>
+                        <p>We have a good history of preparing Environmental Project Briefs reports
+                            for different project that meet national and international requirement.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <h3><strong>Water Quality Assessment</strong></h3>
+                        <hr>
+                        <p>We have prepared, at least one water quality assessment report for
+                            one of our client as a stand-alone report. This report was prepared in 
+                            accordance with national and international standards.
+                        </p>   
+                </div>
+            </div>
+        </section>
+    <section class="cta">
+        <h2>Request a Proposal</h2>
+        <a href="contact.html">Contact Our Team</a>
+    </section>
+    <footer>
+  <div class="container">
+    <P><strong>LOCATE US AT:</strong></P>
+    <p>Wesley Corner</p>
+    Waterside Community, New Georgia, <br>
+    Caldwell Township <br>
+    Monrovia, Liberia<br />
+    Phone: +232 778-002-969<br />
+    EMAIL: cedaliberia@gmail.com<br />
+    <p>&copy; 2026 Center for Environment and Development in Africa (CEDA) Liberia All rights reserved.</p>
+</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEDA Liberia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Banner Section -->
+    <header class="banner">
+        <div class="banner-overlay">
+            <div class="banner-logo-container">
+                <img src="ceda.jpg" alt="CEDA Liberia Logo" class="banner-logo-top">
+            </div>
+            <div class="container">
+                <h1><strong>Welcome to CEDA-Liberia</strong></h1>
+                <p>Delivering Environmental Consultancy Solutions in Africa</p>
+                <a href="contact.html" class="btn">Contact Us</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation with Hamburger -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="ceda.jpg" alt="CEDA Liberia Logo" class="logo">
+                </div>
+                <div class="nav-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="projects.html" class="nav-link">Projects</a></li>
+                    <li><a href="team.html" class="nav-link">Team</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hamburger JS -->
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navMenu = document.querySelector('.nav-menu');
+
+        mobileMenu.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+        });
+    </script>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1><strong>Professional Environmental Consulting in Africa</strong></h1>
+        <p>
+            Delivering ESIA, Environmental audits, RAP, Waste management and sustainability 
+            solutions to governments, donors, and private sector clients.
+        </p>
+    </section>
+
+    <!-- Why CEDA Section -->
+    <section>
+        <div class="container">
+            <div class="section-title">
+                <h2>Why CEDA</h2>
+                <hr>
+                <p>At CEDA, we are dedicated to providing environmental consultancy 
+                    solutions that are practical, science-driven, and tailored to 
+                    the unique needs of our clients. We take the time to understand 
+                    the environmental, social, and regulatory challenges specific 
+                    to each project, ensuring that our recommendations support 
+                    sustainable development while aligning with client objectives. 
+                    Our client-focused approach ensures your environmental goals are 
+                    at the heart of every solution we deliver.
+                </p>
+                <br>
+                <p>With extensive experience in the African context, combined with 
+                    international best practices, CEDA offers expertise that bridges 
+                    local realities and global standards. We understand the region’s 
+                    environmental, social, and regulatory landscapes, enabling us to 
+                    provide solutions that are culturally appropriate, legally compliant, 
+                    and environmentally sound. Our work helps clients mitigate risks, 
+                    optimize resource management, and achieve long-term 
+                    sustainability.
+                </p>
+                <br>
+                <p>Beyond technical expertise, CEDA is driven by innovation and impact. 
+                    We leverage advanced methodologies, data-driven insights, 
+                    and emerging environmental trends to address complex challenges 
+                    effectively. Partnering with CEDA means gaining a trusted advisor 
+                    committed to sustainable growth, environmental stewardship, and 
+                    measurable results that benefit both your organization and the 
+                    communities you serve.
+                </p>
+                <br>
+                <h3><strong>Our Core Pillars:</strong></h3>
+            </div>
+
+            <div class="grid">
+                <div class="card">
+                    <h3><strong>Regional Expertise</strong></h3>
+                    <hr>
+                    <p>We combine deep understanding of the African context with adherence 
+                        to international standards, delivering solutions that are locally 
+                        relevant yet globally benchmarked. Our approach ensures that 
+                        strategies, practices, and recommendations are both culturally 
+                        informed and aligned with best practices, enabling sustainable 
+                        impact and effective outcomes across the region.
+                    </p>
+                </div>
+                <div class="card">
+                    <h3><strong>Credible Delivery</strong></h3>
+                    <hr>
+                    <p>We are committed to delivering results that are reliable, 
+                        transparent, and trusted by clients and stakeholders alike. 
+                        Our work is guided by professional integrity, technical 
+                        competence, and strict adherence to national and international 
+                        standards. Every assignment is executed with a focus on accuracy, 
+                        timeliness, and practical relevance, ensuring that recommendations 
+                        are realistic and implementable.
+                    </p>
+                </div>
+                <div class="card">
+                    <h3><strong>Independent, Evidence-Based Consulting</strong></h3>
+                    <hr>
+                    <p>Our consulting services are fully independent, free from bias or 
+                        external influence. We rely on verifiable data, field observations, 
+                        regulatory frameworks, and scientifically sound methodologies to 
+                        inform our analysis and recommendations. By grounding our work 
+                        in evidence, we help clients make informed decisions, manage risks 
+                        effectively, and achieve sustainable outcomes that stand up to 
+                        regulatory scrutiny and public accountability.
+                    </p>
+                </div>
+                <div class="card">
+                    <h3>Client Focused</h3>
+                    <hr>
+                    <p>We deliver solutions that are strategically aligned with our 
+                        clients’ goals, ensuring that every recommendation, 
+                        service, or product is tailored to meet their unique needs 
+                        and drive meaningful results. By understanding their 
+                        objectives and challenges, we create value-driven solutions 
+                        that not only address immediate requirements but also 
+                        support long-term success.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <h2>Request a Proposal</h2>
+        <a href="contact.html">Contact Our Team</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p><strong>LOCATE US AT:</strong></p>
+            <p>Wesley Corner</p>
+            Waterside Community, New Georgia, <br>
+            Caldwell Township <br>
+            Monrovia, Liberia<br />
+            Phone: +232 778-002-969<br />
+            EMAIL: cedaliberia@gmail.com<br />
+            <p>&copy; 2026 Center for Environment and Development in Africa (CEDA) Liberia. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
