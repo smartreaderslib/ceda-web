@@ -12,7 +12,7 @@
     <header class="banner">
         <div class="banner-overlay">
             <div class="container">
-                <h1><strong>Welcome to CEDA-Liberia</strong></h1>
+                <h1><strong>Center for Environment & Development in Africa <br> (CEDA-Liberia)</strong></h1>
                 <p>Delivering Environmental Consultancy Solutions in Africa</p>
                 <a href="contact.html" class="btn">Contact Us</a>
             </div>
@@ -26,33 +26,43 @@
                 <div class="nav-logo">
                     <img src="ceda.jpg" alt="CEDA Liberia Logo" class="logo">
                 </div>
-                <div class="nav-toggle" id="mobile-menu">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
+<!-- Navigation -->
+<nav class="navbar">
+
+<div class="menu-toggle" onclick="toggleMenu()">
+☰ Menu
+</div>
+<ul id="navMenu">
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="services.html">Services</a></li>
+
+<li><a href="about.html">About</a></li>
+<li><a href="projects.html">Projects</a></li>
+<li><a href="contact.html">Contact us</a></li>
+<li><a href="team.html">Our Team</a></li>
+<li><a href="our experience.html">Our Experiences</a></li>
+<li><a href="gallery.html">Gallery</a></li>
                 </div>
-                <ul class="nav-menu">
-                    <li><a href="index.html" class="nav-link">Home</a></li>
-                    <li><a href="services.html" class="nav-link">Services</a></li>
-                    <li><a href="about.html" class="nav-link">About</a></li>
-                    <li><a href="projects.html" class="nav-link">Projects</a></li>
-                    <li><a href="team.html" class="nav-link">Team</a></li>
-                    <li><a href="contact.html" class="nav-link">Contact</a></li>
-                </ul>
-            </div>
         </nav>
     </header>
 
     <!-- Hamburger JS -->
-    <script>
-        const mobileMenu = document.getElementById('mobile-menu');
-        const navMenu = document.querySelector('.nav-menu');
+ <script>
 
-        mobileMenu.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
-            mobileMenu.classList.toggle('active');
-        });
-    </script>
+function toggleMenu(){
+
+document.getElementById("navMenu").classList.toggle("active");
+}
+function toggleSubMenu(){
+
+document.getElementById("programMenu").classList.toggle("active");
+
+}
+
+</script>
+
 <section>
             <div class="container">
                 <div class="section-title">
@@ -61,8 +71,8 @@
                     <div class="card">
                         <h3><strong>1. Environmental and Social Impact Assessment (ESIA)</strong></h3>
                         <hr>
-                        <p>We conduct full ESIA studies compliant with the Environmental Protection Agency (EPA) 
-                            of Liberia and all international safeguards for development projects in Liberia.</p>
+                        <p>We conduct full ESIA studies compliant with the national and 
+                            international safeguard requirements for development projects in Africa.</p>
                     </div><div class="card">
                         <h3><strong>2. Environmental & Social Management Plan (ESMP)</strong></h3>
                         <hr>
@@ -103,21 +113,32 @@
                 </div>
             </div>
     </section>
+     <!-- CTA -->
     <section class="cta">
         <h2>Request a Proposal</h2>
+        <p>Do you have a project in mind? Contact us today! We are just a click away
+            from responding to your request.</p>
         <a href="contact.html">Contact Our Team</a>
     </section>
-   <footer>
-  <div class="container">
-    <P><strong>LOCATE US AT:</strong></P>
-    <p>Wesley Corner</p>
-    Waterside Community, New Georgia, <br>
-    Caldwell Township <br>
-    Monrovia, Liberia<br />
-    Phone: +232 778-002-969<br />
-    EMAIL: cedaliberia@gmail.com<br />
-    <p>&copy; 2026 Center for Environment and Development in Africa (CEDA) Liberia All rights reserved.</p>
-</div>
-</footer>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+
+            <p><strong>Locate us @:</strong></p>
+            <p>Wesley Corner</p>
+            <p>
+                Waterside Community, New Georgia,<br>
+                Caldwell Township<br>
+                Monrovia, Liberia<br>
+                Phone: +232 778-002-969<br>
+                Email: cedaliberia@gmail.com
+            </p>
+
+            <p>&copy; 2026 Center for Environment & Development in Africa (CEDA) Liberia All rights reserved.</p>
+
+        </div>
+    </footer>
+
 </body>
 </html>

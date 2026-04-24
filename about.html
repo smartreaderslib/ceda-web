@@ -12,7 +12,7 @@
     <header class="banner">
         <div class="banner-overlay">
             <div class="container">
-                <h1><strong>Welcome to CEDA-Liberia</strong></h1>
+                <h1><strong>Center for Environment & Development in Africa <br> (CEDA-Liberia)</strong></h1>
                 <p>Delivering Environmental Consultancy Solutions in Africa</p>
                 <a href="contact.html" class="btn">Contact Us</a>
             </div>
@@ -26,125 +26,162 @@
                 <div class="nav-logo">
                     <img src="ceda.jpg" alt="CEDA Liberia Logo" class="logo">
                 </div>
-                <div class="nav-toggle" id="mobile-menu">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
+<!-- Navigation -->
+<nav class="navbar">
+
+<div class="menu-toggle" onclick="toggleMenu()">
+☰ Menu
+</div>
+<ul id="navMenu">
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="services.html">Services</a></li>
+
+<li><a href="about.html">About</a></li>
+<li><a href="projects.html">Projects</a></li>
+<li><a href="contact.html">Contact us</a></li>
+<li><a href="team.html">Our Team</a></li>
+<li><a href="our experience.html">Our Experiences</a></li>
+<li><a href="gallery.html">Gallery</a></li>
                 </div>
-                <ul class="nav-menu">
-                    <li><a href="index.html" class="nav-link">Home</a></li>
-                    <li><a href="services.html" class="nav-link">Services</a></li>
-                    <li><a href="about.html" class="nav-link">About</a></li>
-                    <li><a href="projects.html" class="nav-link">Projects</a></li>
-                    <li><a href="team.html" class="nav-link">Team</a></li>
-                    <li><a href="contact.html" class="nav-link">Contact</a></li>
-                </ul>
-            </div>
         </nav>
     </header>
 
     <!-- Hamburger JS -->
-    <script>
-        const mobileMenu = document.getElementById('mobile-menu');
-        const navMenu = document.querySelector('.nav-menu');
+ <script>
 
-        mobileMenu.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
-            mobileMenu.classList.toggle('active');
-        });
-    </script>
+function toggleMenu(){
+
+document.getElementById("navMenu").classList.toggle("active");
+}
+function toggleSubMenu(){
+
+document.getElementById("programMenu").classList.toggle("active");
+
+}
+
+</script>
+
+    <!-- ===============================
+         HERO SECTION
+    =============================== -->
     <section class="hero">
         <h1><strong>Professional Environmental Consulting in Africa</strong></h1>
-        <p>Delivering ESIA, Environmental audits, ESMPs, RAPs, ENvironmental Monitoring, climate advisory, and sustainability 
-            solutions to governments, donors, and private sector clients.</p>
+        <p>
+            Delivering ESIA, Environmental audits, ESMPs, RAPs, Environmental Monitoring, 
+            climate advisory, and sustainability solutions to governments, donors, 
+            and private sector clients.
+        </p>
     </section>
+
+    <!-- ===============================
+         ABOUT SECTION
+    =============================== -->
     <section>
         <div class="container">
             <div class="section-title">
                 <h2><strong>Brief Background of CEDA-Liberia</strong></h2>
                 <hr>
-                <p>The Center for Environment and Development in Africa (CEDA-Liberia) 
+
+                <p>
+                    The Center for Environment and Development in Africa (CEDA-Liberia) 
                     is a Certified Environmental Firm within the Republic of Liberia. 
                     It was established in 2008 by the late retired, Professor 
-                    Samuel W.D. Wesley, Sr. Since its establishment, CEDA-Liberia has 
-                    been in good standing with the Environmental Protection Agency (EPA) 
-                    of Liberia. Our firm has been involved in several Environmental 
-                    Consultancy projects for the last seventeen (17) years, and it 
-                    has prepared environmental reports for some profile National and 
-                    International Companies, including projects directly funded by 
-                    the World Bank (WB), African Development Bank (AfDB), European 
-                    Investment Bank, etc.  Our firm has also prepared Social Safeguards 
-                    reports for some Agencies of the Government of Liberia, such as the 
-                    Liberia Electricity Corporation (LEC), the Liberia Water and Sewer 
-                    Corporation. National Bureau of Concessions (NBC), among others. </p>
-                    <br>
-                    <p>Our firm has been awarded several Certificates/Licenses to operate in Liberia 
-                        based on the EPA environmental firms’ evaluation standards, as provided for by 
-                        the Environmental Protection & Management Laws (EPML) of Liberia. </p>
+                    Samuel W.D. Wesley, Sr.
+                </p>
+
+                <br>
+
+                <p>
+                    Since its establishment, CEDA-Liberia has been in good standing with 
+                    the Environmental Protection Agency (EPA) of Liberia. Our firm has 
+                    been involved in several Environmental Consultancy projects for the 
+                    last seventeen (17) years, including work funded by the World Bank, 
+                    African Development Bank (AfDB), and European Investment Bank.
+                </p>
+
+                <br>
+
+                <p>
+                    Our firm has also prepared Social Safeguards reports for agencies of 
+                    the Government of Liberia such as the Liberia Electricity Corporation 
+                    (LEC), Liberia Water and Sewer Corporation, and National Bureau of 
+                    Concessions (NBC).
+                </p>
+
+                <br>
+
+                <p>
+                    Our firm has been awarded several Certificates/Licenses to operate 
+                    in Liberia based on EPA environmental firm standards under the 
+                    Environmental Protection & Management Laws (EPML).
+                </p>
             </div>
+
+            <!-- Cards -->
             <div class="grid">
                 <div class="card">
                     <h3>Our Mission</h3>
                     <hr>
-                    <p>“To support sustainable development in Liberia and Africa by 
+                    <p>
+                        “To support sustainable development in Liberia and Africa by 
                         delivering expert environmental consulting, building local 
-                        capacity, and empowering communities to protect natural 
-                        resources and adapt to climate change.”</p>
+                        capacity, and empowering communities.”
+                    </p>
                 </div>
+
                 <div class="card">
                     <h3>Our Vision</h3>
                     <hr>
-                    <p>“A future where Liberia’s natural resources are 
-                        protected, communities are climate-ready, and 
-                        development is guided by sound environmental 
-                        science and inclusive stewardship.”</p>
+                    <p>
+                        “A future where Liberia’s natural resources are protected, 
+                        communities are climate-ready, and development is guided 
+                        by sound environmental science.”
+                    </p>
                 </div>
+
                 <div class="card">
-                    <h3>Our Core values</h3>
+                    <h3>Our Core Values</h3>
                     <hr>
-                    <p><strong>1. Environmental Stewardship -</strong>We are committed to protecting 
-                        Liberia’s natural resources through responsible management, 
-                        conservation, and sustainable use for present and future 
-                        generations.</p>
-        
-                    <p><strong>2. Scientific Excellence -</strong> We prioritize rigorous, evidence-based 
-                        approaches in all our consulting work, ensuring that our 
-                        recommendations are grounded in the best available science and 
-                        tailored to the unique environmental and social contexts of 
-                        our clients.</p>
-                    <p><strong>3. Client-Centered Solutions - </strong> We are dedicated to understanding 
-                        our clients’ needs and delivering practical, actionable solutions that
-                        support their environmental and sustainability goals while aligning 
-                        with their development objectives.</p>
-                    <p><strong>4. Capacity Building - </strong> We believe in empowering local communities,
-                        institutions, and professionals through training, knowledge sharing,
-                        and collaborative partnerships to enhance environmental management
-                         and climate resilience in Liberia and across Africa.</p>
-                    <p><strong>5. Integrity and Transparency - </strong> We uphold the highest standards of
-                        honesty, accountability, and openness in all our interactions with clients, 
-                        partners, and stakeholders.</p>
-                    <p><strong>6. Innovation and Impact - </strong>We are driven by a passion for 
-                        innovation and a commitment to delivering measurable environmental 
-                        and social impact through our consulting services.</p>
+
+                    <p><strong>1. Environmental Stewardship</strong></p>
+                    <p><strong>2. Scientific Excellence</strong></p>
+                    <p><strong>3. Client-Centered Solutions</strong></p>
+                    <p><strong>4. Capacity Building</strong></p>
+                    <p><strong>5. Integrity and Transparency</strong></p>
+                    <p><strong>6. Innovation and Impact</strong></p>
                 </div>
             </div>
         </div>
     </section>
+
+ <!-- CTA -->
     <section class="cta">
         <h2>Request a Proposal</h2>
+        <p>Do you have a project in mind? Contact us today! We are just a click away
+            from responding to your request.</p>
         <a href="contact.html">Contact Our Team</a>
     </section>
-   <footer>
-  <div class="container">
-    <P><strong>LOCATE US AT:</strong></P>
-    <p>Wesley Corner</p>
-    Waterside Community, New Georgia, <br>
-    Caldwell Township <br>
-    Monrovia, Liberia<br />
-    Phone: +232 778-002-969<br />
-    EMAIL: cedaliberia@gmail.com<br />
-    <p>&copy; 2026 Center for Environment and Development in Africa (CEDA) Liberia All rights reserved.</p>
-</div>
-</footer>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+
+            <p><strong>Locate us @:</strong></p>
+            <p>Wesley Corner</p>
+            <p>
+                Waterside Community, New Georgia,<br>
+                Caldwell Township<br>
+                Monrovia, Liberia<br>
+                Phone: +232 778-002-969<br>
+                Email: cedaliberia@gmail.com
+            </p>
+
+            <p>&copy; 2026 Center for Environment & Development in Africa (CEDA) Liberia All rights reserved.</p>
+
+        </div>
+    </footer>
+
 </body>
 </html>
