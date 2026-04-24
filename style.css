@@ -13,12 +13,6 @@ body p {
     margin-bottom: 15px;
 }
 
-body {
-    line-height: 1.6;
-    color: #333;
-    background: url("footer.jpg") no-repeat center/cover fixed;
-}
-
 /* ===============================
    LAYOUT / CONTAINER
 =============================== */
@@ -288,7 +282,7 @@ section {
 
 .section-title h2,
 .section-title p {
-    color: #fff;
+    color: #333333;
 }
 
 .section-title p {
@@ -320,7 +314,8 @@ section {
 
 .card p {
     color: #333;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    text-align: justify;
 }
 
 /* ===============================
